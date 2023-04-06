@@ -58,6 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="380dp"
         android:layout_height="100dp"
         android:layout_marginTop="25dp"
@@ -121,5 +122,37 @@
             app:fabCustomSize="50dp"
             app:srcCompat="@android:drawable/ic_media_next" />
     </LinearLayout>
+    <SeekBar
+        android:id="@+id/volBar"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:progressBackgroundTint="#D1B076"
+        android:progressTint="#DD8C00"
+        android:thumbTint="#F29D0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="- Громкость +"
+        android:textColor="#F29D0A"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textVolHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
